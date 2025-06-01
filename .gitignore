@@ -2,5 +2,6 @@
 node_modules/
 *.exe
 temp/
+EskiSurumler/
 backup/
 .env
