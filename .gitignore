@@ -1,0 +1,6 @@
+# Gereksiz klasör ve dosyalar
+node_modules/
+*.exe
+temp/
+backup/
+.env

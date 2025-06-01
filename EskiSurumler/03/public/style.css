@@ -1,0 +1,151 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  margin: 0 2px;
+  padding: 4px 10px;
+  height: 28px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 80px;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 110px;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  width: auto;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  width: 50px;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+  width: 80px;
+  text-align: center;
+}
+
+td:last-child,
+th:last-child {
+  width: 40px;
+  text-align: center;
+}
+
+td input[type="text"],
+td input[type="date"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 17px;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+
+td input[type="radio"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.toolbar {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.toolbar .title {
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.toolbar .filter-input {
+  padding: 4px;
+  width: 200px;
+  height: 17px;
+  font-size: 14px;
+}
+
+.counter {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.selected-row {
+  background-color: #d0e7ff !important;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.add-form input {
+  padding: 4px;
+  height: 17px;
+  font-size: 14px;
+}
+
+#newAdet {
+  width: 50px !important;
+}
+
+label.csv-import-button {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  height: 28px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+}

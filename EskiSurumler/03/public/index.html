@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Alınacaklar Listesi</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div class="title">🛒 Alınacaklar Listesi</div>
+    <input type="text" class="filter-input" id="searchBox" placeholder="🔍 Ürün adıyla ara..." oninput="applyFilter()" />
+    <button onclick="exportCSV()">📤 CSV Aktar</button>
+    <button onclick="importCSV()">📥 CSV Oku</button>
+    <input type="file" id="csvFile" accept=".csv" style="display:none" onchange="importCSV()">
+  </div>
+
+  <div class="form-wrapper">
+    <div class="form-row">
+      <input type="text" id="newDurum" placeholder="Durum" style="width: 80px;">
+      <input type="date" id="newTarih" placeholder="Tarih" style="width: 110px;">
+      <input type="text" id="newUrun" placeholder="Ürün Adı" style="width: 300px;">
+      <input type="text" id="newAdet" placeholder="Adet" style="width: 80px;">
+      <input type="text" id="newFiyat" placeholder="Fiyat" style="width: 80px;">
+      <button onclick="addItem()">➕ Ürün Ekle</button>
+      <button onclick="moveUp()">↑ Yukarı Taşı</button>
+      <button onclick="moveDown()">↓ Aşağı Taşı</button>
+      <button onclick="editSelected()">✏️ Düzenle / Kaydet</button>
+      <button onclick="deleteSelected()">🗑️ Sil</button>
+    </div>
+  </div>
+
+  <div id="counter" class="counter"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Durum</th>
+        <th>Tarih</th>
+        <th>Alınacak Ürünün Adı</th>
+        <th>Adet</th>
+        <th>Fiyat</th>
+        <th>Seç</th>
+      </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+
+  <script src="/script.js"></script>
+</body>
+</html>
