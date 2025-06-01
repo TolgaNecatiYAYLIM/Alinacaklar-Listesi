@@ -18,24 +18,35 @@ Kişisel ihtiyaçları düzenlemek için basit, kullanıcı dostu ve yerel dosya
 ```bash
 git clone https://github.com/TolgaNecatiYAYLIM/Alinacaklar-Listesi.git
 cd Alinacaklar-Listesi
-node app.js
+
 
 
 📦 Gerekli modüller:
 
 npm install express fs path body-parser
 
+📦 Uygulamayı başlatın:
+
+node app.js
+
 
 
 📂 Dizin Yapısı:
 
+Alinacaklar-Listesi/
 ├── app.js
-├── buylist.json (ilk çalıştırmada otomatik oluşur)
-├── public
+├── buylist.json (ilk çalıştırmada oluşur)
+├── LICENSE
+├── README.md
+├── .gitignore
+├── public/
 │   ├── index.html
 │   ├── script.js
 │   └── style.css
 
+
+📄 Lisans
+MIT License ile lisanslanmıştır.
 
 
 
